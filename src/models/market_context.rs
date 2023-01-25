@@ -3,6 +3,12 @@ use reqwest::header::HeaderMap;
 use super::market::MarketService;
 
 /// Use the MarketContext to build a simple context for the markt you selected, because the Rewe api needs this data.
+/// Go to [rewe.de](https://rewe.de) and select the button *Choose market* in the top right corner. After you choose your market you will be redirect to a URL that looks like this: `https://www.rewe.de/marktseite/erfurt-rieth/2900003/rewe-markt-mainzer-str-39/`. The part between your city and the street (in this example `2900003`) is your market id. You can build a market context now:
+/// ```
+/// let ctx = MarketContext::new(market_id, zip_code);
+/// // in this example:
+/// let ctx = MarketContext::new(2900003, "99089");
+/// ```
 #[derive(Clone)]
 pub struct MarketContext {
     pub market_id: u32,

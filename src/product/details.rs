@@ -1,5 +1,6 @@
 use crate::{models::{product::ProductDetails, market_context::MarketContext}, errors::ReweError, paths::ApiPath};
 
+/// Get details/information for a product by its listing_id in a [`MarketContext`]
 pub async fn get_product_details(
     listing_id: &str,
     market_ctx: &MarketContext

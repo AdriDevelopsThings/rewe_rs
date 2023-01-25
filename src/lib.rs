@@ -1,3 +1,11 @@
+//! # Introduction
+//! You have to create a [`MarketContext`] to select a market
+//! # Api paths
+//! - Market: [`market`]
+//! - Products: [`product`]
+//! - Basket: [`market::basket::ReweBasket`]
+//! - Offers: [`offer`]
+ 
 #[cfg(test)]
 mod tests;
 

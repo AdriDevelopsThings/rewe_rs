@@ -1,3 +1,5 @@
+#![doc = include_str!("README.md")]
+
 use crate::models::{market_context::MarketContext, market::MarketService};
 
 pub const TEST_MARKET_ID: u32 = 433232;

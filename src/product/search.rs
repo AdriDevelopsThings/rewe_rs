@@ -1,5 +1,11 @@
 use crate::{models::{sorting::Sorting, product::ProductSearch, market_context::MarketContext}, errors::ReweError, paths::ApiPath};
 
+
+/// Search for products by search term like this
+/// ```
+/// let results = search_products(search_term, page, sorting, objects_per_page, ctx).await?;
+/// let results = search_products("club mate", 1, Sorting::default(), 20, ctx).await?;
+/// ```
 pub async fn search_products(
     search_term: &str,
     page: u8,
