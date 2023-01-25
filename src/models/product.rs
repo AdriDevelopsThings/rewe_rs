@@ -40,7 +40,7 @@ pub struct ProductDetails {
     pub tiers: Vec<String>, // todo
     pub product_infos: Vec<ProductInfo>,
     pub order_amount_limit: u8,
-    pub hazards_and_warnings: HazardAndWarnings,
+    pub hazards_and_warnings: Option<HazardAndWarnings>,
     pub recommended_products: Vec<RecommendProduct>,
     pub is_buyable: bool
 }

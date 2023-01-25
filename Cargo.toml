@@ -1,11 +1,11 @@
 [package]
 name = "rewe"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["AdriDevelopsThings <contact@adridoesthings.com>"]
 readme = "README.md"
 repository = "https://github.com/AdriDevelopsThings/rewe_rs"
-license = "AGPL-3.0"
+license = "MIT"
 description = "A rewe mobile api implementation for rust"
 categories = ["api-bindings"]
 
