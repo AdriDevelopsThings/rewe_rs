@@ -77,6 +77,14 @@ basket.change_product_quantity(listing_id, quantity).await?;
 basket.remove_product(listing_id).await?;
 ```
 
+## Offers
+### Get all offers of market
+```rust
+use rewe::offer::get_all_offers;
+
+let offers = get_all_offers(market_ctx).await?;
+```
+
 
 ## Unitests
 
