@@ -1,11 +1,9 @@
-use crate::{product::{search::search_products, details::get_product_details}, models::sorting::Sorting, tests::{default_test_ctx, TEST_SEARCH_TERM}};
-
-use super::TEST_PRODUCT_LISTING_ID;
+use crate::{product::{search::search_products, details::get_product_details}, models::sorting::Sorting, tests::{default_test_ctx, test_search_term, test_product_listing_id}};
 
 #[tokio::test]
 async fn test_product_search() {
     search_products(
-        TEST_SEARCH_TERM,
+        &test_search_term(),
         1,
         Sorting::default(),
         20,
@@ -16,7 +14,7 @@ async fn test_product_search() {
 #[tokio::test]
 async fn test_product_details() {
     get_product_details(
-        TEST_PRODUCT_LISTING_ID,
+        &test_product_listing_id(),
         &default_test_ctx()
     ).await.unwrap();
 }
