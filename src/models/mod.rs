@@ -1,6 +1,7 @@
 pub mod market;
 pub mod product;
 pub mod basket;
+pub mod offer;
 
 pub mod location;
 pub mod address;

@@ -12,3 +12,4 @@ pub fn default_test_ctx() -> MarketContext {
 mod market;
 mod product;
 mod basket;
+mod offer;

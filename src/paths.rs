@@ -11,7 +11,8 @@ pub enum ApiPath {
     ShopServices,
     ProductSearch,
     ProductDetails,
-    BasketOverview
+    BasketOverview,
+    AllOffers
 }
 
 fn error_handler(response: Response) -> Result<Response, ReweError> {
@@ -31,7 +32,8 @@ impl ApiPath {
             ApiPath::ShopServices => "/mobile/shop/services",
             ApiPath::ProductSearch => "/api/v3/product-search",
             ApiPath::ProductDetails => "/api/v3/product-details",
-            ApiPath::BasketOverview => "/api/v3/basket-overview"
+            ApiPath::BasketOverview => "/api/v3/basket-overview",
+            ApiPath::AllOffers => "/api/v3/all-offers"
         }
     }
 
